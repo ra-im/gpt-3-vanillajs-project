@@ -4,13 +4,15 @@
 This project is a simple clone of ChatGpt for answering tech related questions. 
 
 ## Table of Contents
-- [Installation](#installation)
+- [Installation](#install_and_Run)
 - [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)
 - [Contact](#contact)
 
-## Installation
+## Install_and_Run
+
+### Install
 
 Step-by-step instructions on how to install and set up the project. Include any dependencies, libraries, or specific configurations required.
 
@@ -23,8 +25,25 @@ $ cd ../server
 $ npm install
 ```
 
-## Usage
+### Run
+Step-by-step instructions on how to run the program. 
 
+For the client side, while in the directory of the cloned project, run
+```shell
+$ cd client
+$ npm run dev
+```
+the frontend application will start to run on port 5173 on your machine.
+
+For the server side, open a new terminal and while in the directory of the cloned project, run
+```shell
+$ cd server
+$ npm start
+```
+the backend application will start to run on port 5000 on your machine.
+
+## Usage
+- Begin your conversation with the AI chatbot by inserting your query into the prompt session.
 
 ## Features
 - Use the input field to ask tech related questions.

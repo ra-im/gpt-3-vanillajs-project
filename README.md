@@ -8,9 +8,6 @@ This project is a simple clone of ChatGpt for answering tech related questions.
 - [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
 ## Installation
@@ -26,3 +23,12 @@ $ cd ../server
 $ npm install
 ```
 
+## Usage
+
+
+## Features
+- Use the input field to ask tech related questions.
+- Query the ChatGpt text-davinci-003 model to troubleshoot code snippets, or generate insights to your code.
+
+## contact
+Connect with me on [LinkedIn](https://www.linkedin.com/in/raheem-isaac/) and also on [Twitter](https://twitter.com/ra_im00?t=lWseaxeErEm0y9ZjyrdOOQ&s=03)

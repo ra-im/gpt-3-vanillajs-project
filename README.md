@@ -4,7 +4,7 @@
 This project is a simple clone of ChatGpt for answering tech related questions. 
 
 ## Table of Contents
-- [Installation](#install_and_Run)
+- [Install_and_Run](#install_and_run)
 - [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)

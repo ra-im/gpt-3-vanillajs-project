@@ -1,4 +1,5 @@
-to create a vanilla javascript project using vite: npm create vite@latest client --template vanilla 
+to create a vanilla javascript project using vite: npm create vite@latest frontend --template vanilla 
 
-then : cd into client and run 'npm install' to install all the necessary packages for the client side.
+then : cd into frontend and run 'npm install' to install all the necessary packages for the frontend side.
 
+docker build -t gpt3-vanillajs .

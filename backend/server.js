@@ -18,6 +18,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+console.log("heereeee");
+
 app.get('/', async (req, res) => {
     res.status(200).send({
         message: 'whatsup...',
@@ -25,7 +27,7 @@ app.get('/', async (req, res) => {
 });
 
 app.post('/', async (req, res) => {
-    //console.log("yaaaaayaaaaa"); //
+    //console.log("yaaaaayaaaaa");
 
     try {
         const prompt = req.body.prompt;
@@ -37,14 +39,15 @@ app.post('/', async (req, res) => {
             max_tokens: 2000,
             top_p: 1,
             frequency_penalty: 0.5,
-            presence_penalty: 0,
+            presence_penalty: 0
         });
 
-        //console.log("ya");
+        console.log("ya");
 
         res.status(200).send({
-            bot: response.data.choices[0].text,
-        })
+            bot: response.data.choices[0].text
+        });
+        
     } catch (error) {
         console.log(error);
         res.status(500).send({ error })

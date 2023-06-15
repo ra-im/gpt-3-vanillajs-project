@@ -21,20 +21,20 @@ function typeText(element, text) {
   }, 15)
 } 
 
-//to load messages
+//implementing the response loading functionality
 function loader(element) {
-  element.textContent = " ";
+  element.textContent = "";
 
   loadInterval = setInterval(() => { 
     element.textContent += ".";
   
     if (element.textContent === "....") {
-      element.text.textContent = " ";
+      element.textContent = "";
     }
-  }, 500)
+  }, 250)
 }
 
-//generating a unique ID for every single message (in order to map over them)
+//generating a unique ID for every single message (in order to map over them and render the AI response letter by letter)
 function generateUniqueId() {
   const timestamp = Date.now();
   const randomNumber = Math.random();
@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //to get api response
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://5000-raim-devtasks-ous4rqluvau.ws-eu99.gitpod.io/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -102,11 +102,11 @@ const handleSubmit = async (e) => {
     const data = await response.json();
     const parseData = data.bot.trim();
 
-    //console.log({parseData});
+    console.log({parseData});
     typeText(messageDiv, parseData);
   } else {
     const err = await response.text();
-    messageDiv.innerHTML = "oops, something went wrong...";
+    messageDiv.innerHTML = "oops, an error occured while generating response...";
     alert(err);
   }
 }

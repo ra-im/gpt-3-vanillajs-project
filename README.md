@@ -28,7 +28,7 @@ This project is a simple clone of ChatGpt for answering tech related questions.
 - `openAIApi`: OpenAi offers various tools and APIs for natural language processing, machine learning, and other AI-related tasks. One of their APIs was used in this project.
 
 ## Install_and_Run
-To install and run this program, you have to generate an OpenAi API key. Create a .env file and paste your key in this file using thie format:
+To install and run this program, you have to generate an OpenAi API key. Create a .env file within the backend directory and paste your key in this file using thie format:
 ```.env
 OPENAI_API_KEY="YOUR_API_KEY"
 ```

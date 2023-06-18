@@ -88,12 +88,12 @@ const handleSubmit = async (e) => {
   const response = await fetch('https://5000-raim-devtasks-ous4rqluvau.ws-eu99.gitpod.io/', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       prompt: data.get('prompt')
     })
-  })
+  });
 
   clearInterval(loadInterval);
   messageDiv.innerHTML = " ";
